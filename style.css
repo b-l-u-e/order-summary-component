@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  background: bottom 350px left 0 no-repeat
+    url("./images/pattern-background-desktop.svg");
+  background-size: contain;
+  background-color: hsl(225, 100%, 94%);
+  max-width: 90rem;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  box-shadow: 0 0.1rem 0.9rem hsl(224, 23%, 55%);
+  overflow: hidden;
+  max-width: 29rem;
+  max-height: 50rem;
+}
+
+.image-section {
+  width: 100%;
+}
+
+.image-section img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.content-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: whitesmoke;
+  padding: 3rem;
+  width: auto;
+}
+
+.content-section h1 {
+  color: hsl(223, 47%, 23%);
+  font-weight: 700;
+  margin: 0 2rem 1.5rem 2rem;
+}
+
+.content-section p {
+  color: hsl(224, 23%, 55%);
+  margin: 0 2rem 1.2rem 2rem;
+  text-align: center;
+}
+
+.content-section span {
+  display: block;
+}
+
+.content-section .payment {
+  display: block;
+  background-color: hsl(245, 75%, 52%);
+  color: whitesmoke;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 0.7rem;
+  padding: 0.8rem 5.55rem;
+  margin: 2rem 0 0 0;
+  box-shadow: 0.3rem 0.4rem 0.8rem hsl(224, 23%, 55%);
+}
+
+.content-section .cancel {
+  display: block;
+  color: hsl(224, 23%, 55%);
+  font-weight: 700;
+  text-decoration: none;
+  padding: 0.02rem 1rem;
+  margin-top: 1rem;
+}
+
+.plan {
+  display: flex;
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  background-color: hsl(225, 100%, 98%);
+}
+
+.plan .plan-image {
+  width: 50px;
+  height: 50px;
+}
+
+.plan .text {
+  text-align: center;
+  margin: auto 4rem auto 1.2rem;
+  line-height: 1.6;
+  font-size: 0.9rem;
+}
+
+.plan .text strong {
+  color: hsl(223, 47%, 23%);
+  font-weight: 700;
+}
+
+.plan a {
+  font-size: 0.9rem;
+  color: hsl(245, 75%, 52%);
+  text-align: center;
+  margin: auto 0 auto 1.4rem;
+}
+
+@media (max-width: 500px) {
+  body {
+    background: no-repeat url(./images/pattern-background-mobile.svg);
+    background-size: contain;
+    background-color: hsl(225, 100%, 94%);
+    min-height: 100vh;
+  }
+
+  .container {
+    max-width: 20rem;
+  }
+
+  .content-section {
+    padding: 0;
+  }
+
+  .content-section h1 {
+    margin: auto;
+    font-size: 1.5rem;
+  }
+
+  .content-section p {
+    font-size: 0.9rem;
+    margin: 0.5rem auto;
+  }
+
+  .plan {
+    padding: 1rem 0.9rem;
+    margin: 0.6rem auto;
+  }
+
+  .plan .text {
+    font-size: 0.8rem;
+  }
+
+  .plan a {
+    font-size: 0.8rem;
+  }
+
+  .content-section .payment {
+    padding: 0.6rem 5.5rem;
+    font-size: 0.8rem !important;
+    margin-top: 0.5rem;
+  }
+
+  .content-section .cancel {
+    margin: 1.6rem;
+  }
+}
