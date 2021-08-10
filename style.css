@@ -8,7 +8,7 @@
 
 body {
   font-family: "Red Hat Display", sans-serif;
-  background: bottom 350px left 0 no-repeat
+  background: no-repeat
     url("./images/pattern-background-desktop.svg");
   background-size: contain;
   background-color: hsl(225, 100%, 94%);
