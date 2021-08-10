@@ -31,7 +31,7 @@ Users will be able to:
 
 ### Links
 
-- Live Site URL: [Order-summary component]()
+- Live Site URL: [Order-summary component](https://agitated-jackson-d090bf.netlify.app/)
 
 ## my-process
 
